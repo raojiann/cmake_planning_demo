@@ -7,6 +7,7 @@ project(planning
 )
 
 set(CMAKE_CXX_STANDARD 17)
+enable_testing() # enable testing
 
 # 变量和目录设置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
@@ -16,3 +17,4 @@ set(Show_Reult_Dir ${CMAKE_SOURCE_DIR}/src/show_result)
 
 # 添加子目录
 add_subdirectory(src) # add src subdirectory
+add_subdirectory(test/map_test) # add test subdirectory
